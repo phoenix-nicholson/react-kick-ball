@@ -1,14 +1,18 @@
 import './App.css';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Switch, Route } from 'react-router-dom';
+import Teams from './views/Teams/Teams';
 
 function App() {
   return (
     <BrowserRouter>
-      <header className="App-header">
-        <NavLink>Teams</NavLink>
-        <NavLink>Players</NavLink>
+      <header>
+        <NavLink to="/teams">List of Teams</NavLink>
       </header>
+
+      <Switch>
+        <Route exact path="/teams" component={Teams} />
+      </Switch>
     </BrowserRouter>
   );
 }
