@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './player.css';
 
 export default function PlayerList({ players }) {
   return (
