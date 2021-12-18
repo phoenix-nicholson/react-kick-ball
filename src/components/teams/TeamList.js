@@ -8,7 +8,7 @@ export default function TeamList({ teams }) {
       <div>
         {teams.map((item) => (
           <Link key={item.id} to={`/teams/${item.id}`}>
-            {item.name},
+            <p>{item.name}</p>
           </Link>
         ))}
       </div>

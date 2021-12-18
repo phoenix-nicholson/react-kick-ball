@@ -8,7 +8,7 @@ export default function PlayerList({ players }) {
       <div>
         {players.map((item) => (
           <Link key={item.id} to={`players/${item.id}`}>
-            {item.name}
+            <p>{item.name}</p>
           </Link>
         ))}
       </div>
